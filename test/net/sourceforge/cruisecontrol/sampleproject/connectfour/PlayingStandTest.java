@@ -196,7 +196,7 @@ public class PlayingStandTest extends TestCase {
 
         fillWholeStandWithoutWinner(stand);
 
-        assertTrue(stand.areFourConnected());  // Otra rotura  rehecha (assertFalse) 
+        assertFalse(stand.areFourConnected());  // Otra rotura  rehecha (assertFalse) 
         assertTrue(stand.isGameOver());
         assertNull(stand.getWinner());
 
